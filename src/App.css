@@ -1,0 +1,129 @@
+.App {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px){
+  .header__app {
+    position: relative;
+    top: 0;
+    display: flex;
+    background-image: 
+    linear-gradient(250deg, #7dbd4565, #90c94a62, #0b88457b, #3a4f269d, #23301682);
+    justify-content: space-evenly;
+    z-index: 5;
+  }
+  
+  .header__logo {
+    width: 15rem;
+  }
+  
+  .header__title {
+    display: block;
+    margin: auto 2rem;
+    padding-top: 1rem;
+    width: 28rem;
+  }
+  
+  .container {
+    position: relative;
+    display: grid;
+    grid-template-columns: .4fr 1fr;
+  }
+  
+  .search-container {
+    position: sticky;
+    top: 2.5rem;
+    max-width: 100%;
+    margin: 1rem auto;
+    height: 100vh;
+    padding-left: 3rem;
+  }
+  
+  .form {
+    display: block;
+    width: max-content;
+    margin: 5px auto;
+  }
+  
+  .form__input {
+    text-align: center;
+    width: 18rem;
+    border-radius: 10px 0px 0 0px;
+    padding: 6px;
+    font-size: 1rem;
+    font-weight: 400;  
+    background-color: #0b884554;
+    color: #fff;;
+    letter-spacing: .5px;
+    border-style: none;
+    /* margin-top: 1rem; */
+  }
+  
+  ::placeholder {
+    color: grey;
+    font-size: .9rem;
+    font-weight: 200;
+  }
+  
+  .form__button {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    padding: 6.3px 0;
+    align-items: center;
+    border-style: none;
+    background-color: #0b884554;
+    border-radius: 0 10px 0 0;
+    /* aspect-ratio: 1;
+    /* margin-left: 5px; */
+    /* transform: translateY(50%); */
+    overflow: hidden;
+    text-align: center;
+    z-index: 1;
+  }
+  
+  .form__button:hover {
+    background-color: #65d1265c;
+  }
+  
+  .form__button::after {
+    content: "";
+    background:  #65d1265c;
+    position: absolute;
+  }
+  
+  .card-container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  }
+
+  
+  @media (max-width: 768px){
+    .header__app {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      background-image: 
+      linear-gradient(250deg, #7dbd4565, #90c94a62, #0b88457b, #3a4f269d, #23301682);
+      z-index: 5;
+      align-items: center;
+      /* justify-content: space-between; */
+    }
+    
+    .header__logo {
+      width: 20%;
+      margin: 0 auto;
+    }
+    
+    .header__title {
+      /* display: block; */
+      /* margin: 0 auto; */
+      padding-right: 1rem;
+      width: 40%;
+    }
+  }
+  
