@@ -59,7 +59,7 @@
   text-align: center;
   font-weight: 700;
   font-size: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .card__list {
@@ -98,6 +98,7 @@
 
   .card__header{
     position: relative;
+    width: 100%;
   }
   
   .card__container-status {
@@ -141,28 +142,7 @@
   .card__body {
     padding: 20px;
   }
-  
-  .card__name {
-    text-align: center;
-    font-weight: 700;
-    font-size: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .card__list {
-    display: grid;
-    gap: 5px ;
-  }
-  
-  .card__items {
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    font-size: 13px;
-    font-weight: 400;
-    padding-left: 15px;
-  }
-  
+    
   .card__span {
     color: #ccc9;
     transform: translateX(-5px);

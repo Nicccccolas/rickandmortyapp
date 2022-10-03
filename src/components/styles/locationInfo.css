@@ -1,38 +1,82 @@
-.card__location {
-  position: sticky;
-  top: 0;
-  display: flex;
-  width: 840px;
-  margin: 1rem auto;
-  padding: 1.2rem 3rem;
-  background-image: 
-    linear-gradient(250deg,#3d8a35fc , #0b8845fc, #3a4f26fd, #233016f8);
-  gap: 2.5rem;
-  border-radius: .8rem;
-  z-index: 3;
+@media (min-width: 768px){
+  .card__location {
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 840px;
+    margin: 1rem auto;
+    padding: 1.2rem 3rem;
+    background-image: 
+      linear-gradient(250deg,#3d8a35fc , #0b8845fc, #3a4f26fd, #233016f8);
+    gap: 2.5rem;
+    border-radius: .8rem;
+    z-index: 3;
+  }
+  
+  .card__location-name {
+    max-width: 20rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    padding-right: .5rem;
+  }
+  
+  .card__location-list{
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .card__location-items{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    font-size: .8rem;
+  }
+  
+  .card__location-span {
+    font-size: .8rem;
+    font-weight: 700;
+  }
+  
 }
+@media (max-width: 768px){
+  .card__location {
+    position: sticky;
+    top: 0;
+    display: flex;
+    width: 300px;
+    margin: 2rem auto;
+    padding: 1.2rem 3rem;
+    background-image: 
+      linear-gradient(250deg,#3d8a35fc , #0b8845fc, #3a4f26fd, #233016f8);
+    gap: 3rem;
+    border-radius: .8rem;
+    z-index: 3;
+    align-items: center;
+  }
+  .card__location-name {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+  }
 
-.card__location-name {
-  max-width: 20rem;
-  font-size: 1.8rem;
-  font-weight: 700;
-  text-align: center;
-  padding-right: .5rem;
-}
+  .card__location-list {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+  }
 
-.card__location-list{
-  display: flex;
-  gap: 2rem;
-}
+  .card__location-items{
+    display: flex;
+    flex-direction: column;
+    /* gap: .3rem; */
+    font-size: .8rem;
+  }
+  
+  .card__location-span {
+    font-size: 1rem;
+    font-weight: 700;
+  }
 
-.card__location-items{
-  display: flex;
-  flex-direction: column;
-  gap: .3rem;
-  font-size: .8rem;
-}
 
-.card__location-span {
-  font-size: .8rem;
-  font-weight: 700;
 }

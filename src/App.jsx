@@ -101,8 +101,6 @@ function App() {
                   ))
                 }
               </div>
-              <button>Next</button>
-              <button>Prev</button>
             </div>
         }
       </div>
